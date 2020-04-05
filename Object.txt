@@ -1,0 +1,59 @@
+var obj={
+	Dimensions: {
+		"Overall Length" : "3,500",
+		"Overall Width"  : "1,600",
+		"Overall Height" : "1,490",
+		Wheelbase	   : "2,360",
+		"Track Width"	   : {
+			Front	   : "1,405",
+			Rear	   : "1,400"
+			},
+		"Minimum Turning Radius"  : 4.5,
+		"Minimum Ground Clearance"  : 170,
+	},
+	Capacities: {
+		"Seating Capacity" : 5,
+		"Fuel Tank Capacity" : 35
+	},
+	Engine: {
+		Type : "KB-Series",
+		"Number Of Cylinders" : 3,
+		"Number of Valves" : 12,
+		"Capacity" : 998,
+		"Bore x Stroke" : "73.0 x 79.5",
+		"Compression Ratio" : "10:1",
+		"Maximum Power" : "67/6,200",
+		"Maximum Torque" : "90/3,500",
+		"Fuel Injection" : "Multipoint Injection"
+	},
+	Transmission: {
+		Type : "5-Speed MT"
+	},
+	Chassis : {
+		Steering : "Rack & Pinion,Power Assisted",
+		Brakes : {
+			Front : "Ventilated Discs",
+			Rear : "Drums"
+		},
+		Suspension : {
+			Front : "MacPherson Strut & Coil Spring",
+			Rear : "Isolated Trailing Link & Coil Spring"
+		},
+		"Shock Absorbers" : "Gas Filled",
+		"Tyre (Tubeless)" : "155/80R13"
+	},
+	Weights : {
+		"Kerb Weight (Min,With Full Options)" : "860-880",
+		"Gross Vehicle Weight" : "1,320"
+	}
+};
+console.log(obj.Dimensions["Overall Length"]);
+console.log(obj.Dimensions["Track Width"].Front);
+console.log(obj.Capacities["Seating Capacity"]);
+console.log(obj.Engine["Type"]);
+console.log(obj["Engine"]["Bore x Stroke"]);
+console.log(obj.Transmission["Type"]);
+console.log(obj.Chassis["Steering"]);
+console.log(obj.Chassis.Brakes.Front);
+console.log(obj.Chassis["Tyre (Tubeless)"]);
+console.log(obj.Weights["Gross Vehicle Weight"]);
